@@ -1,0 +1,33 @@
+# MoodSyncAI — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# ── core framework ────────────────────────────────────────────────────────────
+streamlit>=1.32.0
+
+# ── deep learning ─────────────────────────────────────────────────────────────
+torch>=2.1.0
+torchvision>=0.16.0
+transformers>=4.38.0
+accelerate>=0.27.0          # faster HuggingFace model loading
+
+# ── image processing ──────────────────────────────────────────────────────────
+Pillow>=10.0.0
+opencv-python>=4.9.0        # Grad-CAM overlay + webcam capture
+numpy>=1.26.0
+
+# ── visual emotion (alternative CNN backend) ──────────────────────────────────
+deepface>=0.0.90            # optional: CNNFacialAnalyser fallback
+
+# ── text sentiment (lightweight alternative) ─────────────────────────────────
+textblob>=0.18.0            # optional: LSTMSentimentAnalyser fallback
+
+# ── audio transcription ───────────────────────────────────────────────────────
+openai-whisper>=20231117    # pip install openai-whisper
+
+# ── data / visualisation ─────────────────────────────────────────────────────
+pandas>=2.2.0
+matplotlib>=3.8.0
+
+# ── HuggingFace Hub (model downloads) ────────────────────────────────────────
+huggingface-hub>=0.21.0
+sentencepiece>=0.2.0        # needed by some tokenisers
