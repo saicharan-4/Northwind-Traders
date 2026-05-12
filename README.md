@@ -141,4 +141,4 @@ A structured prompt encoding the top emotions and mismatch flag is passed to GPT
 
 ---
 
-*Instructor: Prof. Dr. Gayan de Silva | Exam: 13 May 2025*
+
